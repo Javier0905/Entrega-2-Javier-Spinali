@@ -1,0 +1,44 @@
+*{
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 1px red;
+
+}
+
+.cardItem {
+    border: 1px solid red;
+    height: 390 px;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.cardItem .cardImg{
+    border: 1px solid green;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardItem .cardImg img{
+    width: 100%;
+}
+
+.cardDescription{
+    border: 1px solid blue;
+}
+
+.cardDescription .title{
+    font-size: 21px;
+}
+
+
+.cardDescription .description {
+    display: none;
+}
+
+.cardDescription .cant{
+    color: black;
+    font-size: 13px;
+}

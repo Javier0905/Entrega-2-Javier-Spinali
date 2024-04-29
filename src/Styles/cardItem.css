@@ -8,29 +8,39 @@
 
 .cardItem {
     border: 1px solid red;
-    height: 390 px;
-    width: 250px;
-    padding: 10px;
+    height: 480 px;
+    width: 300px;
+    padding: 6px;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cardItem .cardImg{
     border: 1px solid green;
-    height: 200px;
+    height: 50%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+
 }
 
 .cardItem .cardImg img{
     width: 100%;
+    transform: scaleX(0.75);
 }
 
 .cardDescription{
+    display: flex;
     border: 1px solid blue;
+    flex-direction: column;
+    height: 35%;
 }
 
 .cardDescription .title{
     font-size: 21px;
+    margin: 6px;
 }
 
 
@@ -41,4 +51,54 @@
 .cardDescription .cant{
     color: black;
     font-size: 13px;
+    margin: 6px;
+}
+
+.cardDescription .precio{
+    color: blue;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 6px;
+}
+
+.buttons{
+    border: 1px solid black;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons #detalles{
+    height: 60px;
+    width: 70%;
+    border-radius: 50%;
+    background-color: blue;
+    color: whitesmoke;
+    border: none;
+    font-size: 21px;
+}
+
+.button #detalles:hover {
+    background-color: blue;
+}
+
+.buttons #addCart{
+    background-color: blue;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons #addCart img{
+    transform: scale(0.8);
+
+}
+
+.buttons #detalles, .buttons #addCart:hover {
+    background-color: blueviolet;
 }
